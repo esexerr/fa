@@ -1,86 +1,1404 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/cdn-cgi/apps/head/7_N3aHJ6fMx1u8oH90iZ0LNZJvY.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="./static/assets/style.css">
-    <link rel="icon" href="https://media.discordapp.net/attachments/1217320755465949315/1219068237531058186/emote.png?ex=6609f4c5&is=65f77fc5&hm=bcd9bb5e6231a486f0b4570cb2b02f298d90ff48fff4630a32d80842d0a63b27&=&format=webp&quality=lossless">
-    <meta content="@cash" property="og:title">
-    <meta content="https://resort.lol/cash" property="og:url">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:src" content="https://media.discordapp.net/attachments/1217320755465949315/1219110261697544212/emote.png?ex=660a1be8&is=65f7a6e8&hm=217eef584fe8edb0331035e0ab0f8efb6ecff4809c4a96c11ae1e398608cc9b4&=&format=webp&quality=lossless">
-    <meta name="theme-color" content="#551A8B">
-    <title>resort.lol @resort</title>
-    <meta name="description" content="Click to view @dev's page! Get your own page at resort.lol">
-    <meta name="keywords" content="resort.lol, resort, dev, dev bio, dev info, description, bio link, bio, description link, linktree, easy bio, bio maker, page maker, bio page, description page, resort bio page, resort bio, niggas in paris, niggas in paris bio, solo.to, feds.lol, dark.bio, resort.lol, niggas.paris, rich.rip, link in bio, lnk.bio, linktr.ee">
+        <title>resort</title>
+        <meta name="description" content="discord.gg/will | discord.gg/thotty"/>
+        <meta property="og:title" content="resort"/>
+        <meta property="og:description" content="discord.gg/will | discord.gg/thotty"/>
+        <meta property="og:image" content="https://files.catbox.moe/3vy0kz.webp"/>
+        <meta property="og:url" content="https://resort.lol/cashheart"/>
+        <meta property="og:type" content="website"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="stylesheet" href="/static/assets/css/landing.css">
+        <link rel="stylesheet" href="/static/assets/css/misc.css">
+        <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1220443202692190228/1221550779878473808/emote.png?ex=6612fcd1&is=660087d1&hm=dba1aeba7f526f303aaa1d0b9861d91f70c5126cf24578f620eb1a4c3b3f0508&">
+
+<style>
+@font-face {
+    font-family: custom-font;
+    src: url(https://fonts.cdnfonts.com/s/85546/Satoshi-Medium.woff);
+}
+* {
+    font-family: custom-font;
+}
+
+body {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    color: #fff;
+    background-color: #1F2128;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imgundragable {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.customglow-username {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    filter: drop-shadow(0 0 0.2rem #ffffff);
+}
+
+
+.username-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
+    }
+    100% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+}
+
+.avatar_effect {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    animation: glow 2s infinite;
+    margin-bottom: 10px;
+}
+
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+.rainbow-username {
+  font-size: 30px;
+  font-weight: bold;
+  
+  margin-right: 10px;
+  color: #ff0000;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+  /* border */
+  .border {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 39px 27px;
+      width: 100%;
+      max-width: 35.9rem;
+      border-radius: 35px;
+      backdrop-filter: blur(7px);
+      background-color: rgb(255, 255, 255, 0.13) !important;
+     backdrop-filter: blur(7px);
+    background-color: rgb(0, 0, 0, 0.13) !important;
+    box-shadow: 0 0 2.5px #ffffff;
+    background: linear-gradient(
+        45deg, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.1) 40%, 
+        rgba(255, 255, 255, 0.1) 60%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 200%;
+    animation: shine 4s ease-in-out infinite, slide 2s forwards;
+  }
+
+
+@keyframes shine {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+
+  @media (max-width : 480px) {
+      .border {
+          left: 50%;
+          padding: 0px, 0px;
+          width: 80%;
+          max-width: 100%;
+          border-radius: 21px;
+      }
+  }
+  
+.role-icon-wrapper {
+    padding: 7px 10px 1.5px;
+    border-radius: 50px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: inline-flex;
+    place-items: center;
+    margin: 2px auto 20px;
+    background-color: rgba(0, 0, 0, 0.09);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.icon:active {
+  transform: scale(1.2);
+}
+
+.icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.pixelated {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: transparent url(https://i.imgur.com/EyzV6w4.png) repeat 0 0;
+}
+
+
+
+  /* icons */
+  social-icons {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  .icon {
+     width: 35px;
+     height: 35px;
+  }
+  
+  .icon-link {
+      margin: 10px;
+      text-decoration: none;
+      text-align: center;
+  }
+  
+  .icon-link:not(:nth-child(-n+8)) {
+      display: none;
+  }
+  
+  /* social media */
+  
+  .social-media {
+      text-align: center;
+      position: relative;
+  }
+  
+  .description {
+    font-size: 17px;
+        margin: 14px 0;
+      color: #fff;
+  }
+  
+  .username {
+      color: #777777;
+      font-size: 30px;
+      margin-right: 10px;
+      
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(150, 47, 191, 0.7), 0 0 20px rgba(255, 0, 80, 0.7), 0 0 30px rgba(0, 242, 234, 0.7);
+      animation: username 13s infinite;
+  }
+  
+
+  
+  .normal-username {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    
+    font-weight: bold;
+}
+
+  
+
+.role-icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.role-icon img {
+    width: 31px;
+    height: 31px;
+}
+
+
+
+  .sparky-effect {
+    background-image: url(../static/userinfo/effects/sparkle.gif);
+    display: inline-block;
+    padding: 10px;
+}
+
+
+  .glowblue-username {
+    font-size: 30px;
+    margin-right: 10px;
+    
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff;
+}
+
+
+
+
+
+@keyframes popin {
+    0% { transform: scale(0.5) translateX(-50%); }
+    100% { transform: scale(1) translateX(-50%); }
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    font-weight: 580!important;
+    user-select: none;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    display: block;
+    z-index: 1;
+    transform: scale(0) translateX(-50%);
+    left: 50%;
+    bottom: 110%;
+    letter-spacing: .01cm!important;
+    font-size: 14.3px;
+    transition: transform 0.1s ease-out;
+}
+
+
+.role-icon:hover .tooltip,
+.role-icon:focus-within .tooltip {
+    animation: popin 0.1s ease-out forwards;
+}
+
+
+
+  
+  /* glow animation */
+  
+  @keyframes username {
+      0% {
+          text-shadow: 0px 0px 9px #5539cc;
+          opacity: 1;
+      }
+      14% {
+          text-shadow: 0px 0px 9px #5539cc;
+          opacity: 0.50;
+      }
+      20% {
+          text-shadow: 0px 0px 5px #feda75,
+          0px 0px 5px #fa7e1e,
+          0px 0px 5px #d62976,
+          0px 0px 5px #962fbf,
+          0px 0px 5px #4f5bd5;
+          opacity: 1;
+      }
+      30% {
+          text-shadow: 0px 0px 5px #229ED9;
+          opacity: 0.25;
+      }
+      40% {
+          text-shadow: 0px 0px 10px #A00003;
+          opacity: 1;
+      }
+      50% {
+          text-shadow: 0px 0px 10px #FFFC00;
+          opacity: 0.25;
+      }
+      60% {
+          text-shadow: 0px 0px 5px #0079C1;
+          opacity: 1;
+      }
+      70% {
+          text-shadow: 0px 0px 5px gray;
+          opacity: 0.25;
+      }
+      80% {
+          text-shadow: 0px 0px 5px blue;
+          opacity: 1;
+      }
+      90% {
+          text-shadow: 0px 0px 5px #E60023;
+          opacity: 0.25;
+      }
+  }
+  
+
+.videobg {
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    position: absolute
+}
+
+#vidx {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1
+}
+
+@keyframes fadeinout{
+    0%{
+        background-position:-500%
+    }
+    100%{
+        background-position:500%
+    }
+}
+.fadeinoutname{
+    margin-right: 10px;
+    position:relative;
+    overflow:hidden;
+    background: linear-gradient(90deg,#000,#ffffff,#ffffff,#000);
+    background-repeat:no-repeat;
+    background-size:80%;
+    animation:fadeinout 2s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+
+
+
+    </style>
+
+<style>
+.status {
+    color: #f23f43;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_dnd {
+    color: #f23f43;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_streaming {
+    color: #b93ff2;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_idle {
+    color: #eff23f;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_online {
+    color: #08d334;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_offline {
+    color: #858585;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.container, .discordcontainer {
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-flex;
+    place-items: center;
+}
+
+.profile-pic, .avatarcontainer {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.info h1, .infocontainer h1 {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 11px;
+    font-size: 19.7px;
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 630;
+}
+
+.status, .statuscontainer_dnd, .statuscontainer_idle, .statuscontainer_online {
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.status {
+    color: #f23f43;
+}
+
+.statuscontainer_dnd {
+    color: #f23f43;
+}
+
+.statuscontainer_idle {
+    color: #eff23f;
+}
+
+.statuscontainer_online {
+    color: #08d334;
+}
+
+.infocontainer h3 {
+    text-align: left;
+    padding: 0;
+    font-size: 13.2px;
+    font-weight: 520;
+    max-width: 270px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 3.5px 6px 0 11px;
+}
+
+@media (max-width: 767px) {
+    .info h1, .infocontainer h1 {
+        max-width: 115px;
+    }
+
+    .infocontainer h3 {
+        max-width: 115px;
+    }
+}
+
+@media (min-width: 768px) {
+    .info h1, .infocontainer h1 {
+        max-width: 170px;
+    }
+
+    .infocontainer h3 {
+        max-width: 170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .info h1, .infocontainer h1 {
+        max-width: 210px;
+    }
+
+    .infocontainer h3 {
+        max-width: 210px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .info h1, .infocontainer h1 {
+        max-width: 240px;
+    }
+
+    .infocontainer h3 {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 359px) {
+    .info h1, .infocontainer h1 {
+        max-width: 100px;
+    }
+
+    .infocontainer h3 {
+        max-width: 100px;
+    }
+}
+
+.emojicss {
+    margin-top: -1px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 19px;
+    width: auto
+}
+
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW {
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_other__JPn53 {
+    margin-left: 4px;
+    border-radius: 12px;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI {
+    margin-left: 10px;
+    text-align: left;
+    display: block;
+    max-width: 201px;
+    min-width: 200px;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE {
+    display: flex;
+    height: 100%;
+    padding: 5px 10px;
+    place-items: center;
+    margin-top: -5px;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE img {
+    min-height: 60px;
+    max-height: 61px;
+    border-radius: 28%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    text-decoration-color: initial;
+    background-color: rgb(21, 79, 42);
+    color: rgb(232, 230, 227);
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    text-decoration: none;
+    background-color: #1a6334;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 7px;
+    border-radius: 8px;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    font-size: 12.5px!important;
+    padding: 1px 7.5px!important;
+    font-weight: 400;
+}
+#myLink {
+ cursor: pointer;
+}
+</style>
+
+<script>
+var rev = "fwd";
+
+function titlebar(val) {
+    var msg = "resort.lol";
+    var speed = 100;
+    var pos = val;
+    var le = msg.length;
+    if (rev == "fwd") {
+        if (pos < le) {
+            pos = pos + 1;
+            scroll = msg.substr(0, pos);
+            document.title = "   > " + scroll + " <";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        } else {
+            rev = "bwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+    } else {
+        if (pos > 0) {
+            pos = pos - 1;
+            var ale = le - pos;
+            scrol = msg.substr(0, pos);
+            document.title = "   > " + scrol + " <";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        } else {
+            rev = "fwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+    }
+}
+titlebar(1);
+
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
-    <style>
-        .username {
-            font-family: old
-        }
+  <!-- bio link by cryart
+  
+  
+    height: 80.2px;
+  line 467
+   -->
+<body>      
 
-        body {
-            background-color: #0d0d0e
-        }
-    </style>
-    <div class>
-        <div class="center">
-            <div class="container"> <img class="pfp-image" style="border: 30px solid #1f202038;" src="https://media.discordapp.net/attachments/1172672213896409119/1219090937041387540/IMG_5599.png?ex=660a09e9&is=65f794e9&hm=e71c7acad6df5bb376478beb68f560521030eee257a9c38aa6cd9f7f9210babd&=&format=webp&quality=lossless&width=550&height=676" alt="pfp">
-                <p class="username"><span class="rgb">@cashheart</span> </p>
-                <p class style="margin-top: 9px;"> <img class="badgeunder" style="padding: 0px 2px;" src="https://cdn.cya.bio/3b4c1d42-7d74-4225-803a-41784a3af836" title="doxbin"> </p>
-                <div class="socials">
-                    <div class="tooltip"><a target="_blank" href="https://discord.com/users/1146912640808005722"><span class="tooltiptext">discord</span><i class="fa-brands fa-discord"></i></a></div>
-                    <div class="tooltip"><a target="_blank" href="https://www.roblox.com/users/68364776/profile"><span class="tooltiptext">roblox</span><i class="fa-solid fa-gamepad"></i></a></div>
-                </div> <iframe scrolling="no" class="spotifys" style="border-radius:12px;" src="https://open.spotify.com/embed/playlist/7qx7qAbDG2dQubCpsSAtD2?utm_source=generato" width="97%" height="80" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe> <a target="_blank" href="https://www.instagram.com/tyesoforeign"><button style="border-radius: 30px" class="btn-link" type="button">/instagram</button></a> </div>   
-                </iframe> <a target="_blank" href="https://discord.gg/will"><button style="border-radius: 30px" class="btn-link" type="button">/will</button></a> </div>
-            </iframe> <a target="_blank" href="https://discord.gg/finsta"><button style="border-radius: 30px" class="btn-link" type="button">/finsta</button></a> </div>
+<div style="background-image:url(https://files.catbox.moe/uwen0o.mp4); position: absolute; height: 100%; width: 100%; background-size: cover; background-position: 50%; z-index: -1;"></div>
+
+<div class="videobg">
+  <video id="vidx" loop playsinline draggable="false" autoplay muted>
+    <source src="https://files.catbox.moe/uwen0o.mp4" type="video/mp4" id="video-source" /></video>
+</div>
+
+
+
+<div class="landing" id="landing">
+      
+
+
+
+<div class="border">
+  <div class="avatar">
+      <div class="avatar-container" style="display: flex; justify-content: center; align-items: center;">
+          <img src="https://media.discordapp.net/attachments/1220489310692835368/1221549621353119937/IMG_0533.jpg?ex=6612fbbd&is=660086bd&hm=809441e1857abe4b03c12f86054c4abf4bba3f76f9cdba22a6a8fda56a629520&=&format=webp" alt="Avatar" class="imgundragable inline-effect avatar_effect">
+      </div>
+  </div>
+
+
+        <div class="social-media">
+            <!-- username -->
+
+            <p class="normal-username">
+            <h1 class="inline-effect">cash|tye
+            </h1>
+            </p>
+
+
+
+
+            <!-- roles -->
+            <div class="role-icon-wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
-    </div>
-    <script src="/static/page.js"></script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8660cb7bab6920c3","r":1,"version":"2024.2.4","token":"aca9e73fc2974dc191270457ee13e4b8"}'
-        crossorigin="anonymous"></script>
-</body>
-<a href="https://resort.lol/resort">
-    <p id="mark" class="mark">resort.lol</p>
-</a>
+
+
+<div id="discord" class="layout_2_4510bb0b2f33c8542865ef1267675955_act_container__GQfSb" style="justify-content: center">
+<div id="discordrpc"></div>
+<div id="discordrpcissue"></div>
+<div id="discordserver"></div>
+</div>
+
+
+            <!-- description  -->
+              <p class="description typewrite", data-period="1000" data-type='["discord.gg/will | discord.gg/thotty "]'>
+                <span class="wrap"></span>
+              </p>
+            
+        <div id="spotify"></div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <svg style="filter: drop-shadow(0 0 0.2rem #ffffff); margin-right: 4px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
+          <span style="font-size: 0.9em;">24</span>
+          <span style="color: #ffffff; margin: 0 4px;">|</span>
+          <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 395.71 395.71" xml:space="preserve" style="filter: drop-shadow(0 0 0.2rem #ffffff); margin-right: 4px;">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"></path>
+              </g>
+            </g>
+          </svg>
+          <span style="font-size: 0.9em;">disocrd.gg/thotty</span>
+        </div>
+          <!-- socials  -->
+          <div style="
+              margin: 0 .5rem;
+              color: #fff;
+              font-size: 2rem;
+              transition: all .2s ease-in-out;
+              margin-top: 10px;
+          ">
+          
+            <a href="https://discord.gg/thotty" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="#ffffff" height="36" width="36" style="
+              filter: drop-shadow(0 0 0.2rem #ffffff);
+              ">
+                  <path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/tyesoforeign" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+              </svg>
+            </a>
+
+
+
+        </div>
+     </div>
+
+     </div>
+  </div>
+<audio loop="true" id="audio">
+        <source src="https://files.catbox.moe/uwen0o.mp4" type="audio/mpeg">
+    </audio>
+
+
+
+<script src="../static/userinfo/script.js"></script>
+<script src="/static/assets/js/enter.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 <script>
-    function invertColor(hex, bw) {
-        if (hex.indexOf('#') === 0) {
-            hex = hex.slice(1);
-        }
-        if (hex.length === 3) {
-            hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
-        }
-        if (hex.length !== 6) {
-            throw new Error('Invalid HEX color.');
-        }
-        var r = parseInt(hex.slice(0, 2), 16),
-            g = parseInt(hex.slice(2, 4), 16),
-            b = parseInt(hex.slice(4, 6), 16);
-        if (bw) {
-            return (r * 0.299 + g * 0.587 + b * 0.114) > 186 ? '#000000' : '#FFFFFF';
-        }
-        r = (255 - r).toString(16);
-        g = (255 - g).toString(16);
-        b = (255 - b).toString(16);
-        return "#" + padZero(r) + padZero(g) + padZero(b);
+    var roleIconWrapper = document.querySelector('.role-icon-wrapper');
+    if (roleIconWrapper.innerHTML.trim() === '') {
+        roleIconWrapper.style.display = 'none';
     }
-
-    function changeClr() {
-        clr = "#FFFFFF"
-        document.getElementById("mark").style.color = clr;
-        console.log(`Mark color is set to ${clr}`)
-    }
-    changeClr()
 </script>
-<script src="./static/snows.js"></script>
 
+<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  <script>
+window.addEventListener("load", (event) => {
+
+    new cursoreffects.rainbowCursor({
+  length: 3,
+  colors: ["#ffffff"],
+  size: 4,
+});
+});
+  </script>
+  
+
+
+
+
+
+<script>
+
+
+function getElapsedTime(startTimestamp) {
+    let currentTime = new Date();
+    let elapsedTime = currentTime - new Date(startTimestamp);
+    let seconds = Math.floor((elapsedTime / 1000) % 60);
+    let minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+    let hours = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+ document.addEventListener("DOMContentLoaded", function () {
+        const discordApi = 'http://127.0.0.1:3000/user/368713400424988674';
+        fetch(discordApi)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success !== true) {
+                    console.error('I can\'t find user');
+
+                    var discordrpcissue = document.getElementById("discordrpcissue");
+
+                    discordrpcissue.innerHTML = `
+                    <div style="width:auto;background-color:rgb(255, 255, 255, 0.09);border:1px solid rgb(255, 255, 255, 0.2);margin-top:8px;margin-bottom:5px;padding: 10px;border-radius: 15px;position: relative;display: inline-flex;place-items: center">
+                        <div>
+                            <h1 style="color:#ffffff;margin-right:3px;text-align: left;padding: 0;margin: 0 0 0 5px;font-size: 19.7px;max-width: 240px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis">
+                                <svg style="vertical-align:-3px;font-size:22px;color:#ff3333" width="1em" height="1em" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-9 7a9 9 0 1118 0 9 9 0 01-18 0zm8.423-3a.923.923 0 00-.923.923v.385a1 1 0 11-2 0v-.385A2.923 2.923 0 019.423 5H10c1.941 0 3.5 1.591 3.5 3.516 0 .927-.48 1.8-1.276 2.29l-1.7 1.046a1 1 0 01-1.048-1.704l1.7-1.046a.691.691 0 00.324-.586C11.5 7.679 10.82 7 10 7h-.577zm.587 8a1 1 0 100-2H10a1 1 0 100 2h.01z"></path> </g></svg>
+                                 User not found
+                            </h1>
+                            <h3 style="color:#ffffff;text-align: left;margin: 3.5px 0 0 5px;padding: 0;font-size: 14.6px;font-weight: 520">Join <a target="_blank" style="color:#bbbbbb;text-decoration:none" href="https://discord.gg/bio-link">discord.gg/bio-link</a> to display your status.</h3>
+                        </div>
+                    </div>`;
+
+                    return;
+                }
+
+    
+const discordContainer = document.getElementById("discord");
+
+
+const mainWrapper = document.createElement('div');
+mainWrapper.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW';
+mainWrapper.style.flexBasis = '50%';
+mainWrapper.style.marginLeft = '10px';
+
+
+
+const styleElement = document.createElement('style');
+styleElement.innerHTML = `
+  .u_ee11cbb19052e40b07aac0ca060c23ee_pfp__9qePL {
+    border: 2px solid rgb(255, 255, 255, 0.2)!important;
+  }
+  .u_ee11cbb19052e40b07aac0ca060c23ee_dnd__q0R0h svg,
+  .u_ee11cbb19052e40b07aac0ca060c23ee_idle__YYWwY svg,
+  .u_ee11cbb19052e40b07aac0ca060c23ee_offline__AGrkW svg,
+  .u_ee11cbb19052e40b07aac0ca060c23ee_online__YJM9y svg {
+    background-color: rgb(255, 255, 255, 0.2)!important;
+    border-radius: 50%!important;
+    padding: 0.5px 0.5px 0.2px 0.5px!important;
+  }
+`;
+
+const innerWrapper = document.createElement('div');
+innerWrapper.className = 'undefined layout_2_4510bb0b2f33c8542865ef1267675955_reset_m__WhWmN';
+innerWrapper.style.marginRight = '6px';
+
+const leftDiv = document.createElement('div');
+leftDiv.className = 'u_ee11cbb19052e40b07aac0ca060c23ee_left__qFss0';
+leftDiv.style.placeItems = 'flex-start';
+leftDiv.style.height = '60px';
+leftDiv.style.backgroundColor = 'rgba(255, 255, 255, 0.09)';
+leftDiv.style.border = '1px solid rgba(255, 255, 255, 0.2)';
+leftDiv.style.borderRadius = '12px';
+leftDiv.style.display = 'flex';
+
+const profilePicture = document.createElement('img');
+profilePicture.src = data.data.discord_user.avatar;
+profilePicture.height = '60';
+profilePicture.draggable = 'false';
+profilePicture.width = '60';
+profilePicture.className = 'u_ee11cbb19052e40b07aac0ca060c23ee_pfp__9qePL';
+profilePicture.style.marginTop = '-2px';
+
+const infoDiv = document.createElement('div');
+infoDiv.className = 'u_ee11cbb19052e40b07aac0ca060c23ee_info__dm6D_ layout_2_4510bb0b2f33c8542865ef1267675955_adj__Bmii7';
+infoDiv.style.maxWidth = '165px';
+infoDiv.style.minWidth = '165px';
+
+const heading1 = document.createElement('h1');
+heading1.style.color = 'rgb(255, 255, 255)';
+heading1.textContent = data.data.discord_user.username;
+
+const heading3 = document.createElement('h3');
+heading3.style.color = 'rgb(255, 255, 255)';
+heading3.innerHTML = '<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;">Playing</p> </strong> Fortnite<br>Battle Royale - In Lobby';
+
+let activityType = '';
+if (data.data.activities && data.data.activities.length > 0) {
+    let streamingActivity = data.data.activities.find(activity => activity.type === 'STREAMING');
+    let playingActivity = data.data.activities.find(activity => activity.type === 'PLAYING');
+    let listeningActivity = data.data.activities.find(activity => activity.type === 'LISTENING');
+    let customActivity = data.data.activities.find(activity => activity.type === 'CUSTOM');
+    let activityText = '';
+
+    if (listeningActivity) {
+        activityType = 'LISTENING';
+        let details = listeningActivity.details || '';
+        let name = listeningActivity.name || '';
+        let timestamps = listeningActivity.timestamps;
+        let start = new Date(timestamps.start);
+        let end = new Date(timestamps.end);
+
+        let totalDuration = Math.floor((end - start) / 1000);
+        let totalMinutes = Math.floor(totalDuration / 60);
+        let totalSeconds = totalDuration % 60;
+
+        let intervalId = setInterval(function() {
+            let currentTime = new Date();
+            let elapsedTime = Math.floor((currentTime - start) / 1000);
+            let elapsedMinutes = Math.floor(elapsedTime / 60);
+            let elapsedSeconds = elapsedTime % 60;
+
+            let formattedElapsedTime = `${elapsedMinutes.toString().padStart(2, '0')}:${elapsedSeconds.toString().padStart(2, '0')}`;
+            let formattedTotalDuration = `${totalMinutes.toString().padStart(2, '0')}:${totalSeconds.toString().padStart(2, '0')}`;
+
+            activityText = `${name}${details ? '<br>' + details : ''}<br>${formattedElapsedTime} / ${formattedTotalDuration}`;
+            heading3.innerHTML = `<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;">${activityType}</p> </strong> ${activityText}`;
+
+            if (elapsedTime >= totalDuration) {
+                clearInterval(intervalId);
+                formattedElapsedTime = formattedTotalDuration;
+                activityText = `${name}${details ? '<br>' + details : ''}<br>${formattedElapsedTime} / ${formattedTotalDuration}`;
+                heading3.innerHTML = `<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;">${activityType}</p> </strong> ${activityText}`;
+            }
+        }, 100);
+    } else if (streamingActivity) {
+    activityType = 'STREAMING';
+    let details = streamingActivity.details || '';
+    let name = streamingActivity.name || '';
+    activityText = `Streaming ${name}${details ? '<br>' + details : ''}`;
+    heading3.innerHTML = `<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;">${activityType}</p> </strong> ${activityText}`;
+} else if (playingActivity) {
+    let details = playingActivity.details || '';
+    if (playingActivity.timestamps) {
+        setInterval(function() {
+            let elapsedTime = getElapsedTime(playingActivity.timestamps.start);
+            activityText = `Playing ${playingActivity.name}${details ? '<br>' + details : ''}`;
+            heading3.innerHTML = `<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;">${activityType}</p> </strong> ${activityText}`;
+
+            if (details.length > elapsedTime.length) {
+                heading3.style.width = 'auto';
+            } else {
+                heading3.style.width = '170px';
+            }
+        }, 100);
+    } else {
+        activityText = `Playing ${playingActivity.name}${details ? '\n' + details : ''}`;
+        heading3.innerHTML = `<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;">${activityType}</p> </strong> ${activityText.replace("\n", "<br>")}`;
+    }
+} else if (customActivity) {
+    let activityText = customActivity.state;
+    if (customActivity.emoji) {
+        let emojiText = '';
+        if (customActivity.emoji.animated === null) {
+            emojiText = customActivity.emoji.name;
+        } else if (customActivity.emoji.animated) {
+            emojiText = `<img src="https://cdn.discordapp.com/emojis/${customActivity.emoji.id}.gif" width="19" height="19" draggable="false" class="emojicss">`;
+        } else {
+            emojiText = `<img src="https://cdn.discordapp.com/emojis/${customActivity.emoji.id}.png" width="19" height="19" draggable="false" class="emojicss">`;
+        }
+        activityText = `<div style="display: flex; align-items: center;">${emojiText}<span style="text-overflow: ellipsis; overflow: hidden;">${activityText}</span></div>`;
+    }
+    heading3.innerHTML = `<div id="activities22" style="color: rgb(255, 255, 255); display: block; justify-content: left; margin-top: 4.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: auto;">${activityText}</div>`;
+} else {
+    heading3.innerHTML = '<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;"></p> </strong> No activity';
+}
+} else {
+    heading3.innerHTML = '<strong> <p class="layout_2_4510bb0b2f33c8542865ef1267675955_listen__jt1Kc" style="padding: 0px; margin: 0px; display: none;"></p> </strong> No activity';
+}
+
+document.body.appendChild(heading3);
+
+
+let largeImageUrl;
+let smallImageUrl;
+
+if (data.data.activities && data.data.activities.length > 0) {
+    let streamingActivity = data.data.activities.find(activity => activity.type === 'STREAMING');
+    let playingActivity = data.data.activities.find(activity => activity.type === 'PLAYING');
+    let listeningActivity = data.data.activities.find(activity => activity.type === 'LISTENING');
+    let activity;
+    if (streamingActivity) {
+        activity = streamingActivity;
+    } else if (listeningActivity) {
+        activity = listeningActivity;
+    } else if (playingActivity) {
+        activity = playingActivity;
+    }
+
+    if (activity) {
+        if (activity.assets && activity.assets.largeImage) {
+            if (activity.assets.largeImage.startsWith('spotify:')) {
+                largeImageUrl = activity.assets.largeImage.replace('spotify:', 'https://i.scdn.co/image/');
+            } else {
+                if (activity.assets.largeImage.startsWith('mp:attachments/')) {
+                    largeImageUrl = 'https://cdn.discordapp.com/attachments/' + activity.assets.largeImage.replace('mp:attachments/', '');
+                } else {
+                    largeImageUrl = 'https://cdn.discordapp.com/app-assets/' + activity.application_id + '/' + activity.assets.largeImage + '.png';
+                }
+            }
+        }
+
+        if (activity.assets && activity.assets.smallImage) {
+            if (activity.assets.smallImage.startsWith('spotify:')) {
+                smallImageUrl = activity.assets.smallImage.replace('spotify:', 'https://i.scdn.co/image/');
+            } else {
+                if (activity.assets.smallImage.startsWith('mp:attachments/')) {
+                    smallImageUrl = 'https://cdn.discordapp.com/attachments/' + activity.assets.smallImage.replace('mp:attachments/', '');
+                } else {
+                    smallImageUrl = 'https://cdn.discordapp.com/app-assets/' + activity.application_id + '/' + activity.assets.smallImage + '.png';
+                }
+            }
+        }
+    }
+}
+
+
+
+const statusIcon = document.createElement('div');
+        if (data.data.discord_status === 'dnd') {
+statusIcon.className = 'u_ee11cbb19052e40b07aac0ca060c23ee_dnd__q0R0h';
+statusIcon.style.left = '52px';
+statusIcon.style.fontSize = '18px';
+statusIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm5 11H7v-2h10v2z" fill="currentColor"></path></svg>';
+                } else if (data.data.discord_status === 'idle') {
+statusIcon.className = 'u_ee11cbb19052e40b07aac0ca060c23ee_idle__YYWwY';
+statusIcon.style.left = '52px';
+statusIcon.style.fontSize = '18px';
+statusIcon.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M235.54 150.21a104.84 104.84 0 0 1-37 52.91A104 104 0 0 1 32 120a103.09 103.09 0 0 1 20.88-62.52a104.84 104.84 0 0 1 52.91-37a8 8 0 0 1 10 10a88.08 88.08 0 0 0 109.8 109.8a8 8 0 0 1 10 10Z"></path></svg>';
+                } else if (data.data.discord_status === 'online') {
+statusIcon.className = 'u_ee11cbb19052e40b07aac0ca060c23ee_online__YJM9y';
+statusIcon.style.left = '52px';
+statusIcon.style.fontSize = '18px';
+statusIcon.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6m0 2a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4Z"></path></svg>';
+                } else if (data.data.discord_status === 'offline') {
+statusIcon.className = 'u_ee11cbb19052e40b07aac0ca060c23ee_offline__AGrkW';
+statusIcon.style.left = '52px';
+statusIcon.style.fontSize = '18px';
+statusIcon.innerHTML = '<svg  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M16.06 7.94a1.5 1.5 0 0 1 0 2.12L14.122 12l1.94 1.94a1.5 1.5 0 0 1-2.122 2.12L12 14.122l-1.94 1.94a1.5 1.5 0 0 1-2.12-2.122L9.878 12l-1.94-1.94a1.5 1.5 0 1 1 2.122-2.12L12 9.878l1.94-1.94a1.5 1.5 0 0 1 2.12 0ZM0 12C0 5.373 5.373 0 12 0s12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12Zm12-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18Z"></path></svg>';
+                }
+
+mainWrapper.appendChild(styleElement);
+mainWrapper.appendChild(innerWrapper);
+innerWrapper.appendChild(leftDiv);
+leftDiv.appendChild(profilePicture);
+leftDiv.appendChild(infoDiv);
+infoDiv.appendChild(heading1);
+infoDiv.appendChild(heading3);
+infoDiv.appendChild(statusIcon);
+
+
+if (largeImageUrl || smallImageUrl) {
+  const flexContainer = document.createElement('div');
+  flexContainer.style.display = 'flex';
+  flexContainer.style.marginInlineStart = 'auto';
+
+  if (largeImageUrl) {
+    const largeImage = document.createElement('img');
+    largeImage.src = largeImageUrl;
+    largeImage.style.height = '63px';
+    largeImage.style.width = '63px';
+    largeImage.style.borderRadius = '10px';
+    largeImage.style.marginLeft = '10px';
+    flexContainer.appendChild(largeImage);
+  }
+
+  if (smallImageUrl) {
+    const smallImage = document.createElement('img');
+    smallImage.src = smallImageUrl;
+    smallImage.style.height = '25px';
+    smallImage.style.width = '25px';
+    smallImage.style.borderRadius = '150px';
+    smallImage.style.position = 'absolute';
+    smallImage.style.bottom = '11px';
+    smallImage.style.right = '2px';
+    smallImage.style.marginLeft = '10px';
+    flexContainer.appendChild(smallImage);
+  }
+
+  leftDiv.appendChild(flexContainer);
+}
+
+
+document.body.appendChild(mainWrapper);
+discordContainer.appendChild(mainWrapper);
+
+            })
+ })
+</script>
+
+
+
+<script>
+    var roleIconWrapper = document.querySelector('.role-icon-wrapper');
+    if (roleIconWrapper.innerHTML.trim() === '') {
+        roleIconWrapper.style.display = 'none';
+    }
+</script>
+
+
+<script>
+let text = `discord.gg/will | discord.gg/thotty`;
+let formattedText = text.replace(/(\r\n|\n|\r)/g, '<br>');
+console.log(formattedText)
+
+</script>
+
+
+<script>
+   var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 1000;
+    this.txt = '';
+    this.isDeleting = false;
+    this.messages = this.toRotate[this.loopNum].split('|').map(message => message.replace(/!br!/g, '<br/>'));
+    this.messageIndex = 0;
+    this.tick();
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        toRotate = toRotate.replace(/\n|\r\n/g, '\\n');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            var parsed = JSON.parse(toRotate); 
+            for (var j=0; j<parsed.length; j++) {
+                parsed[j] = parsed[j].replace(/\\n/g, '\n').replace(/\n/g, '!br!');
+            }
+            new TxtType(elements[i], parsed, period);
+        }
+    }
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+};
+
+TxtType.prototype.tick = function() {
+    var fullTxt = this.messages[this.messageIndex];
+
+    if (this.isDeleting) {
+        if (this.txt.endsWith('<br/>')) {
+            this.txt = this.txt.substring(0, this.txt.lastIndexOf('<'));
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        }
+    } else {
+        if (fullTxt.substring(this.txt.length, this.txt.length + 5) === '<br/>') {
+            this.txt += '<br/>';
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { 
+        delta /= 4;
+        if (this.txt === '') {
+            this.isDeleting = false;
+            if (++this.messageIndex >= this.messages.length) {
+                this.messageIndex = 0;
+                this.loopNum++;
+                if (this.loopNum >= this.toRotate.length) {
+                    this.loopNum = 0;
+                }
+                this.messages = this.toRotate[this.loopNum].split('|').map(message => message.replace(/!br!/g, '<br/>'));
+            }
+            delta = 500;
+        }
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+    }
+
+    setTimeout(function() {
+        that.tick();
+    }, delta);
+};
+</script>
+
+
+
+<script>
+
+;(function () {
+    var r=Math.random,n=0,d=document,w=window,
+        i=d.createElement('img'),
+        z=d.createElement('div'),
+        zs=z.style,
+        a=w.innerWidth*r(),b=w.innerHeight*r();
+    zs.position="fixed";
+    zs.left=0;
+    zs.top=0;
+    zs.opacity=0;
+    z.appendChild(i);
+    i.src='data:image/gif;base64,R0lGODlhMAAwAJECAAAAAEJCQv///////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQACACwAAAAAMAAwAAACdpSPqcvtD6NcYNpbr4Z5ewV0UvhRohOe5UE+6cq0carCgpzQuM3ut16zvRBAH+/XKQ6PvaQyCFs+mbnWlEq0FrGi15XZJSmxP8OTRj4DyWY1lKdmV8fyLL3eXOPn6D3f6BcoOEhYaHiImKi4yNjo+AgZKTl5WAAAIfkECQEAAgAsAAAAADAAMAAAAnyUj6nL7Q+jdCDWicF9G1vdeWICao05ciUVpkrZIqjLwCdI16s+5wfck+F8JOBiR/zZZAJk0mAsDp/KIHRKvVqb2KxTu/Vdvt/nGFs2V5Bpta3tBcKp8m5WWL/z5PpbtH/0B/iyNGh4iJiouMjY6PgIGSk5SVlpeYmZqVkAACH5BAkBAAIALAAAAAAwADAAAAJhlI+py+0Po5y02ouz3rz7D4biSJbmiabq6gCs4B5AvM7GTKv4buby7vsAbT9gZ4h0JYmZpXO4YEKeVCk0QkVUlw+uYovE8ibgaVBSLm1Pa3W194rL5/S6/Y7P6/f8vp9SAAAh+QQJAQACACwAAAAAMAAwAAACZZSPqcvtD6OctNqLs968+w+G4kiW5omm6ooALeCusAHHclyzQs3rOz9jAXuqIRFlPJ6SQWRSaIQOpUBqtfjEZpfMJqmrHIFtpbGze2ZywWu0aUwWEbfiZvQdD4sXuWUj7gPos1EAACH5BAkBAAIALAAAAAAwADAAAAJrlI+py+0Po5y02ouz3rz7D4ZiCIxUaU4Amjrr+rDg+7ojXTdyh+e7kPP0egjabGg0EIVImHLJa6KaUam1aqVynNNsUvPTQjO/J84cFA3RzlaJO2495TF63Y7P6/f8vv8PGCg4SFhoeIg4UQAAIfkEBQEAAgAsAAAAADAAMAAAAnaUj6nL7Q+jXGDaW6+GeXsFdFL4UaITnuVBPunKtHGqwoKc0LjN7rdes70QQB/v1ykOj72kMghbPpm51pRKtBaxoteV2SUpsT/Dk0Y+A8lmNZSnZlfH8iy93lzj5+g93+gXKDhIWGh4iJiouMjY6PgIGSk5eVgAADs=';
+    d.body.appendChild(z);
+    function R(o,m){return Math.max(Math.min(o+(r()-.5)*400,m-50),50)}
+    function A(){
+        var x=R(a,w.innerWidth),y=R(b,w.innerHeight),
+            d=5*Math.sqrt((a-x)*(a-x)+(b-y)*(b-y));
+        zs.opacity=n;n=1;
+        zs.transition=zs.webkitTransition=d/1e3+'s linear';
+        zs.transform=zs.webkitTransform='translate('+x+'px,'+y+'px)';
+        i.style.transform=i.style.webkitTransform=(a>x)?'':'scaleX(-1)';
+        a=x;b=y;
+        setTimeout(A,d);
+    };setTimeout(A,r()*3e3);
+    })();
+    
+    ;(function () {
+    var r=Math.random,n=0,d=document,w=window,
+        i=d.createElement('img'),
+        z=d.createElement('div'),
+        zs=z.style,
+        a=w.innerWidth*r(),b=w.innerHeight*r();
+    zs.position="fixed";
+    zs.left=0;
+    zs.top=0;
+    zs.opacity=0;
+    z.appendChild(i);
+    i.src='data:image/gif;base64,R0lGODlhMAAwAJECAAAAAEJCQv///////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQACACwAAAAAMAAwAAACdpSPqcvtD6NcYNpbr4Z5ewV0UvhRohOe5UE+6cq0carCgpzQuM3ut16zvRBAH+/XKQ6PvaQyCFs+mbnWlEq0FrGi15XZJSmxP8OTRj4DyWY1lKdmV8fyLL3eXOPn6D3f6BcoOEhYaHiImKi4yNjo+AgZKTl5WAAAIfkECQEAAgAsAAAAADAAMAAAAnyUj6nL7Q+jdCDWicF9G1vdeWICao05ciUVpkrZIqjLwCdI16s+5wfck+F8JOBiR/zZZAJk0mAsDp/KIHRKvVqb2KxTu/Vdvt/nGFs2V5Bpta3tBcKp8m5WWL/z5PpbtH/0B/iyNGh4iJiouMjY6PgIGSk5SVlpeYmZqVkAACH5BAkBAAIALAAAAAAwADAAAAJhlI+py+0Po5y02ouz3rz7D4biSJbmiabq6gCs4B5AvM7GTKv4buby7vsAbT9gZ4h0JYmZpXO4YEKeVCk0QkVUlw+uYovE8ibgaVBSLm1Pa3W194rL5/S6/Y7P6/f8vp9SAAAh+QQJAQACACwAAAAAMAAwAAACZZSPqcvtD6OctNqLs968+w+G4kiW5omm6ooALeCusAHHclyzQs3rOz9jAXuqIRFlPJ6SQWRSaIQOpUBqtfjEZpfMJqmrHIFtpbGze2ZywWu0aUwWEbfiZvQdD4sXuWUj7gPos1EAACH5BAkBAAIALAAAAAAwADAAAAJrlI+py+0Po5y02ouz3rz7D4ZiCIxUaU4Amjrr+rDg+7ojXTdyh+e7kPP0egjabGg0EIVImHLJa6KaUam1aqVynNNsUvPTQjO/J84cFA3RzlaJO2495TF63Y7P6/f8vv8PGCg4SFhoeIg4UQAAIfkEBQEAAgAsAAAAADAAMAAAAnaUj6nL7Q+jXGDaW6+GeXsFdFL4UaITnuVBPunKtHGqwoKc0LjN7rdes70QQB/v1ykOj72kMghbPpm51pRKtBaxoteV2SUpsT/Dk0Y+A8lmNZSnZlfH8iy93lzj5+g93+gXKDhIWGh4iJiouMjY6PgIGSk5eVgAADs=';
+    d.body.appendChild(z);
+    function R(o,m){return Math.max(Math.min(o+(r()-.5)*400,m-50),50)}
+    function A(){
+        var x=R(a,w.innerWidth),y=R(b,w.innerHeight),
+            d=5*Math.sqrt((a-x)*(a-x)+(b-y)*(b-y));
+        zs.opacity=n;n=1;
+        zs.transition=zs.webkitTransition=d/1e3+'s linear';
+        zs.transform=zs.webkitTransform='translate('+x+'px,'+y+'px)';
+        i.style.transform=i.style.webkitTransform=(a>x)?'':'scaleX(-1)';
+        a=x;b=y;
+        setTimeout(A,d);
+    };setTimeout(A,r()*3e3);
+    })();
+    ;(function () {
+    var r=Math.random,n=0,d=document,w=window,
+        i=d.createElement('img'),
+        z=d.createElement('div'),
+        zs=z.style,
+        a=w.innerWidth*r(),b=w.innerHeight*r();
+    zs.position="fixed";
+    zs.left=0;
+    zs.top=0;
+    zs.opacity=0;
+    z.appendChild(i);
+    i.src='data:image/gif;base64,R0lGODlhMAAwAJECAAAAAEJCQv///////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQACACwAAAAAMAAwAAACdpSPqcvtD6NcYNpbr4Z5ewV0UvhRohOe5UE+6cq0carCgpzQuM3ut16zvRBAH+/XKQ6PvaQyCFs+mbnWlEq0FrGi15XZJSmxP8OTRj4DyWY1lKdmV8fyLL3eXOPn6D3f6BcoOEhYaHiImKi4yNjo+AgZKTl5WAAAIfkECQEAAgAsAAAAADAAMAAAAnyUj6nL7Q+jdCDWicF9G1vdeWICao05ciUVpkrZIqjLwCdI16s+5wfck+F8JOBiR/zZZAJk0mAsDp/KIHRKvVqb2KxTu/Vdvt/nGFs2V5Bpta3tBcKp8m5WWL/z5PpbtH/0B/iyNGh4iJiouMjY6PgIGSk5SVlpeYmZqVkAACH5BAkBAAIALAAAAAAwADAAAAJhlI+py+0Po5y02ouz3rz7D4biSJbmiabq6gCs4B5AvM7GTKv4buby7vsAbT9gZ4h0JYmZpXO4YEKeVCk0QkVUlw+uYovE8ibgaVBSLm1Pa3W194rL5/S6/Y7P6/f8vp9SAAAh+QQJAQACACwAAAAAMAAwAAACZZSPqcvtD6OctNqLs968+w+G4kiW5omm6ooALeCusAHHclyzQs3rOz9jAXuqIRFlPJ6SQWRSaIQOpUBqtfjEZpfMJqmrHIFtpbGze2ZywWu0aUwWEbfiZvQdD4sXuWUj7gPos1EAACH5BAkBAAIALAAAAAAwADAAAAJrlI+py+0Po5y02ouz3rz7D4ZiCIxUaU4Amjrr+rDg+7ojXTdyh+e7kPP0egjabGg0EIVImHLJa6KaUam1aqVynNNsUvPTQjO/J84cFA3RzlaJO2495TF63Y7P6/f8vv8PGCg4SFhoeIg4UQAAIfkEBQEAAgAsAAAAADAAMAAAAnaUj6nL7Q+jXGDaW6+GeXsFdFL4UaITnuVBPunKtHGqwoKc0LjN7rdes70QQB/v1ykOj72kMghbPpm51pRKtBaxoteV2SUpsT/Dk0Y+A8lmNZSnZlfH8iy93lzj5+g93+gXKDhIWGh4iJiouMjY6PgIGSk5eVgAADs=';
+    d.body.appendChild(z);
+    function R(o,m){return Math.max(Math.min(o+(r()-.5)*400,m-50),50)}
+    function A(){
+        var x=R(a,w.innerWidth),y=R(b,w.innerHeight),
+            d=5*Math.sqrt((a-x)*(a-x)+(b-y)*(b-y));
+        zs.opacity=n;n=1;
+        zs.transition=zs.webkitTransition=d/1e3+'s linear';
+        zs.transform=zs.webkitTransform='translate('+x+'px,'+y+'px)';
+        i.style.transform=i.style.webkitTransform=(a>x)?'':'scaleX(-1)';
+        a=x;b=y;
+        setTimeout(A,d);
+    };setTimeout(A,r()*3e3);
+    })();
+</script>
+
+
+    <script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var discordDiv = document.getElementById('discord');
+    var allChildrenEmpty = Array.from(discordDiv.children).every(function(child) {
+        return child.innerHTML.trim() === '';
+    });
+
+    if (allChildrenEmpty) {
+        discordDiv.remove();
+    }
+});
+</script>
+
+
+</body>
 </html>
