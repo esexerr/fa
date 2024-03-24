@@ -1,0 +1,34 @@
+.error.svelte-ikycqx.svelte-ikycqx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+.error.svelte-ikycqx h1.svelte-ikycqx {
+  font-size: 10rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.error.svelte-ikycqx h1 .emoji.svelte-ikycqx {
+  font-size: 2rem;
+}
+.error.svelte-ikycqx h2.svelte-ikycqx {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.error.svelte-ikycqx span.svelte-ikycqx {
+  font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+  .error.svelte-ikycqx h1.svelte-ikycqx {
+    font-size: 6rem;
+  }
+  .error.svelte-ikycqx h2.svelte-ikycqx,
+  .error.svelte-ikycqx span.svelte-ikycqx {
+    font-size: 1.25rem;
+  }
+}

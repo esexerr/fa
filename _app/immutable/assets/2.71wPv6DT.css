@@ -1,0 +1,12 @@
+.text.svelte-vn0seh h1.svelte-vn0seh {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+.text.svelte-vn0seh p.svelte-vn0seh {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
